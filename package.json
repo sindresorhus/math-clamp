@@ -1,0 +1,35 @@
+{
+  "name": "math-clamp",
+  "version": "0.0.0",
+  "description": "Clamp a number",
+  "license": "MIT",
+  "repository": "sindresorhus/math-clamp",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "math",
+    "number",
+    "numbers",
+    "clamp",
+    "limit",
+    "min",
+    "max",
+    "between",
+    "range"
+  ],
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
