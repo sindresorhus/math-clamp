@@ -4,5 +4,13 @@ module.exports = function (x, min, max) {
 		throw new RangeError('`min` should be lower than `max`');
 	}
 
-	return x < min ? min : x > max ? max : x;
+	if (x < min) {
+		return min;
+	}
+
+	if (x > max) {
+		return max;
+	}
+
+	return x;
 };
