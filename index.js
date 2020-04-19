@@ -1,16 +1,17 @@
 'use strict';
-module.exports = function (x, min, max) {
+
+module.exports = function (number, min, max) {
 	if (min > max) {
 		throw new RangeError('`min` should be lower than `max`');
 	}
 
-	if (x < min) {
+	if (number < min) {
 		return min;
 	}
 
-	if (x > max) {
+	if (number > max) {
 		return max;
 	}
 
-	return x;
+	return number;
 };
