@@ -1,4 +1,4 @@
-# math-clamp [![Build Status](https://travis-ci.com/sindresorhus/math-clamp.svg?branch=master)](https://travis-ci.com/sindresorhus/math-clamp)
+# math-clamp
 
 > [Clamp](https://en.wikipedia.org/wiki/Clamping_(graphics)) a number
 
