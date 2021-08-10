@@ -11,15 +11,15 @@ $ npm install math-clamp
 ## Usage
 
 ```js
-const mathClamp = require('math-clamp');
+import mathClamp from 'math-clamp';
 
-mathClamp(1, 2, 4);
+mathClamp(1, {minimum: 2, maximum: 4});
 //=> 2
 ```
 
 ## API
 
-### mathClamp(number, min, max)
+### mathClamp(number, {minimum, maximum})
 
 ## Related
 

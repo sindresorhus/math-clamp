@@ -1,17 +1,15 @@
-'use strict';
-
-module.exports = function (number, min, max) {
-	if (min > max) {
-		throw new RangeError('`min` should be lower than `max`');
+export default function mathClamp(number, {minimum, maximum}) {
+	if (minimum > maximum) {
+		throw new RangeError('`minimum` should be lower than `maximum`');
 	}
 
-	if (number < min) {
-		return min;
+	if (number < minimum) {
+		return minimum;
 	}
 
-	if (number > max) {
-		return max;
+	if (number > maximum) {
+		return maximum;
 	}
 
 	return number;
-};
+}
