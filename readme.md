@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install math-clamp
+```sh
+npm install math-clamp
 ```
 
 ## Usage
@@ -24,4 +24,4 @@ mathClamp(1, {minimum: 2, maximum: 4});
 ## Related
 
 - [math-sum](https://github.com/sindresorhus/math-sum) - Sum numbers
-- [math-avg](https://github.com/sindresorhus/math-avg) - Get the average of numbers
+- [math-average](https://github.com/sindresorhus/math-average) - Get the average of numbers
