@@ -15,11 +15,17 @@ import mathClamp from 'math-clamp';
 
 mathClamp(1, {minimum: 2, maximum: 4});
 //=> 2
+
+mathClamp(1, {minimum: 2});
+//=> 2
+
+mathClamp(5, {maximum: 4});
+//=> 4
 ```
 
 ## API
 
-### mathClamp(number, {minimum, maximum})
+### mathClamp(number, {minimum?, maximum?})
 
 ## Related
 
