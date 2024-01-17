@@ -19,7 +19,7 @@ mathClamp(1, {minimum: 2, maximum: 4});
 
 ## API
 
-### mathClamp(number, {minimum, maximum})
+### mathClamp(number, {minimum?, maximum?})
 
 ## Related
 
