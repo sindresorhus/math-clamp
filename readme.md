@@ -16,9 +16,6 @@ import mathClamp from 'math-clamp';
 mathClamp(1, {min: 2, max: 4});
 //=> 2
 
-mathClamp(1, {minimum: 2, maximum: 4});
-//=> 2
-
 mathClamp(1, {min: 2});
 //=> 2
 
