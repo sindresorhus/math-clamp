@@ -40,18 +40,8 @@ test('main', t => {
 	t.is(mathClamp(0, {maximum: 1}), 0);
 	t.is(mathClamp(0, {max: 1}), 0);
 
-	t.throws(() => mathClamp(0, {max: 1, maximum: 1}), {
-		instanceOf: TypeError,
-		message: '`max` and `maximum` are mutually exclusive',
-	});
-
-	t.throws(() => mathClamp(0, {min: 1, minimum: 1}), {
-		instanceOf: TypeError,
-		message: '`min` and `minimum` are mutually exclusive',
-	});
-
-	t.throws(() => mathClamp(0, {min: 1, minimum: 1, max: 1, maximum: 1}), {
-		instanceOf: TypeError,
-		message: '`min` and `minimum` are mutually exclusive',
-	});
+	t.is(mathClamp(2, {max: 1, maximum: 3}), 1);
+	t.is(mathClamp(1, {min: 3, minimum: 2}), 3);
+	t.is(mathClamp(5, {min: 2, minimum: 1, max: 3, maximum: 4}), 3);
+	t.is(mathClamp(0, {min: 2, minimum: 1, max: 3, maximum: 4}), 2);
 });

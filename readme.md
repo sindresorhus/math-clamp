@@ -25,7 +25,7 @@ mathClamp(5, {max: 4});
 
 ## API
 
-### mathClamp(number, {min/minimum?, max/maximum?})
+### mathClamp(number, {min?, max?})
 
 ## Related
 
