@@ -20,11 +20,11 @@ export default function mathClamp(number, {min, minimum, max, maximum}) {
 	}
 
 	if (number < min) {
-		return minimum;
+		return min;
 	}
 
 	if (number > max) {
-		return maximum;
+		return max;
 	}
 
 	return number;
