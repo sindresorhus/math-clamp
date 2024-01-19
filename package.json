@@ -4,6 +4,7 @@
 	"description": "Clamp a number",
 	"license": "MIT",
 	"repository": "sindresorhus/math-clamp",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
@@ -11,6 +12,7 @@
 	},
 	"type": "module",
 	"exports": "./index.js",
+	"sideEffects": false,
 	"engines": {
 		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
