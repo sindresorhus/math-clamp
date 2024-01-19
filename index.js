@@ -1,14 +1,18 @@
-export default function mathClamp(number, {minimum, maximum}) {
-	if (minimum > maximum) {
-		throw new RangeError('`minimum` should be lower than `maximum`');
+export default function mathClamp(number, {min, minimum, max, maximum}) {
+	// TODO: Remove `minimum` and `maximum` options in the next breaking release
+	min ??= minimum;
+	max ??= maximum;
+
+	if (min > max) {
+		throw new RangeError('`min` should be lower than `max`');
 	}
 
-	if (number < minimum) {
-		return minimum;
+	if (number < min) {
+		return min;
 	}
 
-	if (number > maximum) {
-		return maximum;
+	if (number > max) {
+		return max;
 	}
 
 	return number;
