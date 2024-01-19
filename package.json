@@ -39,11 +39,12 @@
 		"between",
 		"range"
 	],
-	"devDependencies": {
-		"ava": "^3.15.0",
-		"xo": "^0.44.0"
-	},
 	"dependencies": {
 		"type-fest": "^4.9.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"tsd": "^0.30.4",
+		"xo": "^0.44.0"
 	}
 }
