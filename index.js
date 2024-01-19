@@ -1,8 +1,10 @@
-export default function mathClamp(number, {min, minimum, max, maximum}) {
-	// TODO: Remove `minimum` and `maximum` options in the next breaking release
-	min ??= minimum;
-	max ??= maximum;
-
+// TODO: Remove `minimum` and `maximum` options in the next breaking release
+export default function mathClamp(number, {
+	minimum = number,
+	min = minimum,
+	maximum = number,
+	max = maximum,
+}) {
 	if (min > max) {
 		throw new RangeError('`min` should be lower than `max`');
 	}
