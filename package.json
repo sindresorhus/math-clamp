@@ -1,6 +1,6 @@
 {
 	"name": "math-clamp",
-	"version": "2.2.0",
+	"version": "2.2.1",
 	"description": "Clamp a number",
 	"license": "MIT",
 	"repository": "sindresorhus/math-clamp",
