@@ -21,6 +21,9 @@ mathClamp(1, {min: 2});
 
 mathClamp(5, {max: 4});
 //=> 4
+
+mathClamp(3n, {max: 2n});
+//=> 2n
 ```
 
 ## API
